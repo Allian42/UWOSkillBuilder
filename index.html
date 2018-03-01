@@ -1,0 +1,290 @@
+<head>
+	<title>UWO Skill Builder</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="testeStyle.css">	
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="testeScript.js"></script> 
+</head>
+<body>
+	<div class="body-container">
+		<!--<div id="nav" class=sidepanel>
+			<span class="navBtn" onclick="toggleNav()">&#9776;</span>
+		</div>-->
+		
+		
+		
+		
+		
+		
+		<div id="skillCont" class="panel panel-success numSkills">
+			<div id="skills" class="panel-heading">
+				Skills: 0/45
+			</div>
+		</div>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th colspan="4" class="text-center">Adventure</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td1" onclick='tdClick(this)'><img src="Resources\sail_handling.png"> Sail Handling</td>
+					<td id="td2" onclick='tdClick(this)'><img src="Resources\surveying.png"> Surveying</td>
+					<td id="td3" onclick='tdClick(this)'><img src="Resources\fishing.png"> Fishing</td>
+					<td id="td4" onclick='tdClick(this)'><img src="Resources\survival.png"> Survival</td>
+				</tr>
+				<tr>
+					<td id="td5" onclick='tdClick(this)'><img src="Resources\eradication.png"> Eradication</td>
+					<td id="td6" onclick='tdClick(this)'><img src="Resources\rescue.png"> Rescue</td>
+					<td id="td7" onclick='tdClick(this)'><img src="Resources\wining_and_dining.png"> Wining and Dining</td>
+					<td id="td8" onclick='tdClick(this)'><img src="Resources\violin_performance.png"> Violin performance</td>
+				</tr>
+				<tr>
+					<td id="td9" onclick='tdClick(this)'><img src="Resources\search.png"> Search</td>
+					<td id="td10" onclick='tdClick(this)'><img src="Resources\recognition.png"> Recognition</td>
+					<td id="td11" onclick='tdClick(this)'><img src="Resources\observe.png"> Observe</td>
+					<td id="td12" onclick='tdClick(this)'><img src="Resources\unlock.png"> Unlock</td>
+				</tr>
+				<tr>
+					<td id="td13" onclick='tdClick(this)'><img src="Resources\collection.png"> Collection</td>
+					<td id="td14" onclick='tdClick(this)'><img src="Resources\procurement.png"> Procurement</td>
+					<td id="td15" onclick='tdClick(this)'><img src="Resources\marching.png"> Marching</td>
+					<td id="td16" onclick='tdClick(this)'><img src="Resources\ecological_research.png"> Ecological Research</td>
+				</tr>
+				<tr>
+					<td id="td17" onclick='tdClick(this)'><img src="Resources\archaeology.png"> Archaeology</td>
+					<td id="td18" onclick='tdClick(this)'><img src="Resources\theology.png"> Theology</td>
+					<td id="td19" onclick='tdClick(this)'><img src="Resources\appraisal.png"> Appraisal</td>
+					<td id="td20" onclick='tdClick(this)'><img src="Resources\art.png"> Art</td>
+				</tr>
+				<tr>
+					<td id="td21" onclick='tdClick(this)'><img src="Resources\geography.png"> Geography</td>
+					<td id="td22" onclick='tdClick(this)'><img src="Resources\biology.png"> Biology</td>
+					<td id="td23" onclick='tdClick(this)'><img src="Resources\astronomy.png"> Astronomy</td>
+					<td id="td24" onclick='tdClick(this)'><img src="Resources\throwing.png"> Throwing</td>
+				</tr>
+				<tr>
+					<td id="td25" onclick='tdClick(this)'><img src="Resources\trap.png"> Trap</td>
+					<td id="td26" onclick='tdClick(this)'><img src="Resources\linguistics.png"> Linguistics</td>
+					<td id="td27" onclick='tdClick(this)'><img src="Resources\salvage.png"> Salvage</td>
+					<td id="td28" onclick='tdClick(this)'><img src="Resources\haul.png"> Haul</td>
+				</tr>
+				<tr>
+					<td id="td29" onclick='tdClick(this)'><img src="Resources\persuasion.png"> Persuasion</td>
+					<td id="td30" onclick='tdClick(this)'><img src="Resources\mine_detection.png"> Mine detection</td>
+					<td id="td31" onclick='tdClick(this)'><img src="Resources\navigation.png"> Navigation</td>
+					<td id="td32" onclick='tdClick(this)'><img src="Resources\provisions.png"> Provisions</td>
+				</tr>
+				<tr>
+					<td id="td33" onclick='tdClick(this)'><img src="Resources\pet_training.png"> Pet Training</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th colspan="4" class="text-center">Trade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td34" onclick='tdClick(this)'><img src="Resources\accounts.png"> Accounts</td>
+					<td id="td35" onclick='tdClick(this)'><img src="Resources\sociability.png"> Sociability</td>
+					<td id="td36" onclick='tdClick(this)'><img src="Resources\body_language.png"> Body language</td>
+					<td id="td37" onclick='tdClick(this)'><img src="Resources\frugality.png"> Frugality</td>
+				</tr>
+				<tr>
+					<td id="td38" onclick='tdClick(this)'><img src="Resources\caution.png"> Caution</td>
+					<td id="td39" onclick='tdClick(this)'><img src="Resources\escape.png"> Escape</td>
+					<td id="td40" onclick='tdClick(this)'><img src="Resources\cooking.png"> Cooking</td>
+					<td id="td41" onclick='tdClick(this)'><img src="Resources\storage.png"> Storage</td>
+				</tr>
+				<tr>
+					<td id="td42" onclick='tdClick(this)'><img src="Resources\sewing.png"> Sewing</td>
+					<td id="td43" onclick='tdClick(this)'><img src="Resources\casting.png"> Casting</td>
+					<td id="td44" onclick='tdClick(this)'><img src="Resources\handicrafts.png"> Handicrafts</td>
+					<td id="td45" onclick='tdClick(this)'><img src="Resources\alchemy.png"> Alchemy</td>
+				</tr>
+				<tr>
+					<td id="td46" onclick='tdClick(this)'><img src="Resources\food_trading.png"> Food trading</td>
+					<td id="td47" onclick='tdClick(this)'><img src="Resources\livestock_trading.png"> Livestock trading</td>
+					<td id="td48" onclick='tdClick(this)'><img src="Resources\seasoning_trading.png"> Seasoning trading</td>
+					<td id="td49" onclick='tdClick(this)'><img src="Resources\alcohol_trading.png"> Alcohol trading</td>
+				</tr>
+				<tr>
+					<td id="td50" onclick='tdClick(this)'><img src="Resources\luxuries_trading.png"> Luxuries trading</td>
+					<td id="td51" onclick='tdClick(this)'><img src="Resources\perfume_trading.png"> Perfume trading</td>
+					<td id="td52" onclick='tdClick(this)'><img src="Resources\spice_trading.png"> Spice trading</td>
+					<td id="td53" onclick='tdClick(this)'><img src="Resources\textile_trading.png"> Textile trading</td>
+				</tr>
+				<tr>
+					<td id="td54" onclick='tdClick(this)'><img src="Resources\fabric_trading.png"> Fabric trading</td>
+					<td id="td55" onclick='tdClick(this)'><img src="Resources\dye_trading.png"> Dye trading</td>
+					<td id="td56" onclick='tdClick(this)'><img src="Resources\sundries_trading.png"> Sundries trading</td>
+					<td id="td57" onclick='tdClick(this)'><img src="Resources\medicine_trading.png"> Medicine trading</td>
+				</tr>
+				<tr>
+					<td id="td58" onclick='tdClick(this)'><img src="Resources\mineral_trading.png"> Mineral trading</td>
+					<td id="td59" onclick='tdClick(this)'><img src="Resources\wares_trading.png"> Wares trading</td>
+					<td id="td60" onclick='tdClick(this)'><img src="Resources\metal_trading.png"> Metal trading</td>
+					<td id="td61" onclick='tdClick(this)'><img src="Resources\weapons_trading.png"> Weapons trading</td>
+				</tr>
+				<tr>
+					<td id="td62" onclick='tdClick(this)'><img src="Resources\firearms_trading.png"> Firearms trading</td>
+					<td id="td63" onclick='tdClick(this)'><img src="Resources\crafts_trading.png"> Crafts trading</td>
+					<td id="td64" onclick='tdClick(this)'><img src="Resources\art_trading.png"> Art trading</td>
+					<td id="td65" onclick='tdClick(this)'><img src="Resources\jewellry_trading.png"> Jewellry trading</td>
+				</tr>
+				<tr>
+					<td id="td66" onclick='tdClick(this)'><img src="Resources\management_skill.png"> Management skill</td>
+					<td id="td67" onclick='tdClick(this)'><img src="Resources\merchandise_knowledge.png"> Merchandise Knowledge</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th colspan="4" class="text-center">Battle</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td68" onclick='tdClick(this)'><img src="Resources\steering.png"> Steering</td>
+					<td id="td69" onclick='tdClick(this)'><img src="Resources\lookout.png"> Lookout</td>
+					<td id="td70" onclick='tdClick(this)'><img src="Resources\rowing.png"> Rowing</td>
+					<td id="td71" onclick='tdClick(this)'><img src="Resources\first_aid.png"> First Aid</td>
+				</tr>
+				<tr>
+					<td id="td72" onclick='tdClick(this)'><img src="Resources\gunnery.png"> Gunnery</td>
+					<td id="td73" onclick='tdClick(this)'><img src="Resources\evasion.png"> Evasion</td>
+					<td id="td74" onclick='tdClick(this)'><img src="Resources\accuracy.png"> Accuracy</td>
+					<td id="td75" onclick='tdClick(this)'><img src="Resources\ballistics.png"> Ballistics</td>
+				</tr>
+				<tr>
+					<td id="td76" onclick='tdClick(this)'><img src="Resources\reloading.png"> Reloading</td>
+					<td id="td77" onclick='tdClick(this)'><img src="Resources\penetration.png"> Penetration</td>
+					<td id="td78" onclick='tdClick(this)'><img src="Resources\swordplay.png"> Swordplay</td>
+					<td id="td79" onclick='tdClick(this)'><img src="Resources\aboardage.png"> Aboardage</td>
+				</tr>
+				<tr>
+					<td id="td80" onclick='tdClick(this)'><img src="Resources\plunder.png"> Plunder</td>
+					<td id="td81" onclick='tdClick(this)'><img src="Resources\guard.png"> Guard</td>
+					<td id="td82" onclick='tdClick(this)'><img src="Resources\assault.png"> Assault</td>
+					<td id="td83" onclick='tdClick(this)'><img src="Resources\gunfire.png"> Gunfire</td>
+				</tr>
+				<tr>
+					<td id="td84" onclick='tdClick(this)'><img src="Resources\tactics.png"> Tactics</td>
+					<td id="td85" onclick='tdClick(this)'><img src="Resources\repair.png"> Repair</td>
+					<td id="td86" onclick='tdClick(this)'><img src="Resources\leadership.png"> Leadership</td>
+					<td id="td87" onclick='tdClick(this)'><img src="Resources\fire_fighting.png"> Fire Fighting</td>
+				</tr>
+				<tr>
+					<td id="td88" onclick='tdClick(this)'><img src="Resources\pathology.png"> Pathology</td>
+					<td id="td89" onclick='tdClick(this)'><img src="Resources\surgery.png"> Surgery</td>
+					<td id="td90" onclick='tdClick(this)'><img src="Resources\sword_mastery.png"> Sword Mastery</td>
+					<td id="td91" onclick='tdClick(this)'><img src="Resources\sniping.png"> Sniping</td>
+				</tr>
+				<tr>
+					<td id="td92" onclick='tdClick(this)'><img src="Resources\bow_attack.png"> Bow Attack</td>
+					<td id="td93" onclick='tdClick(this)'><img src="Resources\shipbuilding.png"> Shipbuilding</td>
+					<td id="td94" onclick='tdClick(this)'><img src="Resources\request_reinforce.png"> Request reinforce</td>
+					<td id="td95" onclick='tdClick(this)'><img src="Resources\request_convoy.png"> Request Convoy</td>
+				</tr>
+				<tr>
+					<td id="td96" onclick='tdClick(this)'><img src="Resources\mine_laying.png"> Mine laying</td>
+					<td id="td97" onclick='tdClick(this)'><img src="Resources\arms.png"> Arms</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th colspan="4" class="text-center">Language</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td98" onclick='tdClick(this)'><img src="Resources\english.png"> English</td>
+					<td id="td99" onclick='tdClick(this)'><img src="Resources\dutch.png"> Dutch</td>
+					<td id="td100" onclick='tdClick(this)'><img src="Resources\german.png"> German</td>
+					<td id="td101" onclick='tdClick(this)'><img src="Resources\nordic.png"> Nordic</td>
+				</tr>
+				<tr>
+					<td id="td102" onclick='tdClick(this)'><img src="Resources\celtic.png"> Celtic</td>
+					<td id="td103" onclick='tdClick(this)'><img src="Resources\portuguese.png"> Portuguese</td>
+					<td id="td104" onclick='tdClick(this)'><img src="Resources\spanish.png"> Spanish</td>
+					<td id="td105" onclick='tdClick(this)'><img src="Resources\french.png"> French</td>
+				</tr>
+				<tr>
+					<td id="td106" onclick='tdClick(this)'><img src="Resources\italian.png"> Italian</td>
+					<td id="td107" onclick='tdClick(this)'><img src="Resources\latin.png"> Latin</td>
+					<td id="td108" onclick='tdClick(this)'><img src="Resources\slavic.png"> Slavic</td>
+					<td id="td109" onclick='tdClick(this)'><img src="Resources\greek.png"> Greek</td>
+				</tr>
+				<tr>
+					<td id="td110" onclick='tdClick(this)'><img src="Resources\far_north_languages.png"> Far North Languages</td>
+					<td id="td111" onclick='tdClick(this)'><img src="Resources\arabic.png"> Arabic</td>
+					<td id="td112" onclick='tdClick(this)'><img src="Resources\ancient_egyptian.png"> Ancient Egyptian</td>
+					<td id="td113" onclick='tdClick(this)'><img src="Resources\hebrew.png"> Hebrew</td>
+				</tr>
+				<tr>
+					<td id="td114" onclick='tdClick(this)'><img src="Resources\turkish.png"> Turkish</td>
+					<td id="td115" onclick='tdClick(this)'><img src="Resources\west_african_languages.png"> West African languages</td>
+					<td id="td116" onclick='tdClick(this)'><img src="Resources\swahili.png"> Swahili</td>
+					<td id="td117" onclick='tdClick(this)'><img src="Resources\persian.png"> Persian</td>
+				</tr>
+				<tr>
+					<td id="td118" onclick='tdClick(this)'><img src="Resources\indian_languages.png"> Indian languages</td>
+					<td id="td119" onclick='tdClick(this)'><img src="Resources\mayan_languages.png"> Mayan languages</td>
+					<td id="td120" onclick='tdClick(this)'><img src="Resources\nahuatl.png"> Nahuatl</td>
+					<td id="td121" onclick='tdClick(this)'><img src="Resources\quechua.png"> Quechua</td>
+				</tr>
+				<tr>
+					<td id="td122" onclick='tdClick(this)'><img src="Resources\north_american_languages.png"> North American languages</td>
+					<td id="td123" onclick='tdClick(this)'><img src="Resources\thai-burmese.png"> Thai/Burmese</td>
+					<td id="td124" onclick='tdClick(this)'><img src="Resources\mon-khmer_languages.png"> Mon-Khmer languages</td>
+					<td id="td125" onclick='tdClick(this)'><img src="Resources\chinese.png"> Chinese</td>
+				</tr>
+				<tr>
+					<td id="td126" onclick='tdClick(this)'><img src="Resources\japanese.png"> Japanese</td>
+					<td id="td127" onclick='tdClick(this)'><img src="Resources\korean.png"> Korean</td>
+					<td id="td128" onclick='tdClick(this)'><img src="Resources\malay-tagalog.png"> Malay/Tagalog</td>
+					<td id="td129" onclick='tdClick(this)'><img src="Resources\oceanic_languages.png"> Oceanic languages</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
