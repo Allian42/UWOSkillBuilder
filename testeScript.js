@@ -17,28 +17,11 @@ function tdClick(e)
 	}
 	else
 	{
-		if(numSkills == 45)
-		{
-			return;
-		}
 		e.classList.add("success");
 		numSkills++;
 	}
 	
-	s.innerHTML = "Skills: " + numSkills + "/45";
-	
-	if(numSkills == 45)
-	{
-		sc.classList.add("panel-danger");
-		sc.classList.remove("panel-success");
-		return;
-	}
-	else
-	{
-		sc.classList.add("panel-success");
-		sc.classList.remove("panel-danger");
-	}
-	
+	s.innerHTML = "Skills: " + numSkills;	
 	saveBuild();
 };
 
